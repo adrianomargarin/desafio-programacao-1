@@ -1,0 +1,8 @@
+*.swp
+*.pyc
+*.py~
+*.css~
+*.js~
+*.log
+*.db
+*.sqlite3

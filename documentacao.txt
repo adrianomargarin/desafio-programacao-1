@@ -1,0 +1,18 @@
+### Configurando o ambiente para teste
+    1º - Criar uma virtualenv para o projeto*¹;
+        $ virtualenv envdesafio
+    2º - Ativando a virtualenv;
+        $ source envdesafio/bin/activate
+    3º - Instalando pacotes com pip;
+        $ pip install -r requirements.txt
+        #Será instalado apenas o django==1.5.4
+    4º - Criar base. Será necessário criar um superuser. Foi utilizado sqlite3 para o desafio.
+        $ python manage.py syncdb
+
+*¹ $ sudo apt-get install python-virtualenv
+
+### Iniciando servidor para testes
+    1º - Levantar o servidor
+        $ python manage.py runserver 8000
+    2º - Acessar a url localhost:8000/upload
+    3º - Realizar o upload de um arquivo '.tab'

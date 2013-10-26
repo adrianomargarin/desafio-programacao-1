@@ -1,0 +1,15 @@
+{% if messages %}
+    {% for m in messages %}
+        {% ifequal m.tags 'success' %}
+            <div class="alert fade in alert-success sucesso">
+                <b>{{ m|safe }}</b>
+            </div>
+        {% endifequal %}
+        {% ifequal m.tags 'error' %}
+            <div class="alert fade in alert-error erro">
+                <b>{{ m|safe }}</b>
+            </div>
+        {% endifequal %}
+    {% endfor %}
+{% endif %}
+
